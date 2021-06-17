@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorological Station | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <img class ="logo" src="images/logo.png" alt="meteorological logo">
+
+            <div class="text">
+                <h1>Meteorological Station</h1>
+                <p>Safe climate, safe future</p>
+            </div>
+
+        </nav>
+
+        <div class="text-gallery">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li> 
+            </ul>
+        </div>
+    </header>
+    
+    <h1>Preston Idaho</h1>
+    <div class="hero-image-box">
+        <div class="summary">
+            <h3>Weather Summary</h3>
+            <h5>If you like sunshine, light wind, low humidity and warm but not-too-hot temperatures, then this will be the perfect day for you! <br><br>
+                Wednesday night will be mostly clear with lows in the mid 50s and calm air.
+
+                Thursday will be mostly sunny again, but this time we start transitioning to a new air mass as highs rise back into the low to mid 80s. 
+                We will remain dry Thursday evening, but the humidity will start coming back and, as a result, overnight lows will only drop into the mid 60s.</h5>
+        </div>
+    </div>
+
+    <h2>Five-day Forecast</h2>
+    <div class="five-day-forecast">
+        <ul>
+            <li><img src="images/day1.png" alt="sunny day" title="sunny day"> </li>
+            <li><img src="images/day2.png" alt="rainy day" title="rainy day"></li>
+            <li><img src="images/day3.png" alt="windy day" title="windy day"></li>
+            <li><img src="images/day4.png" alt="cloudy day" title="cloudy day"></li>
+            <li><img src="images/day5.png" alt="sunny day" title="sunny day"></li>
+        </ul>
+    </div>
+
+    <div class="article-box">
+        <h3>Extreme Heat, Drought Fuel Dozens of Fires Across Western U.S.</h3>
+            <p>
+            <img src="images/heat-index.jpg" align="right" alt="US heat index" width="350px">
+            Residents in several states have been ordered to evacuate due to wildfires as a blistering, record-breaking heat wave and extreme drought persist in the western United States.<br><br>
+
+            At least 28 large fires are burning over more than 550 square miles in eight western states, according to the National Interagency Fire Center (NIFC).
+            
+            The biggest current burn area is in Arizona, where eight fires were burning more than 375 square miles as of Wednesday morning.<br><br>
+            
+            Meanwhile, new evacuations were ordered overnight in Montana. Residents of some communities near Red Lodge, south of Yellowstone National Park, were told to leave their homes immediately, while others were under warnings for potential evacuations, according to a social media post from the Custer Gallatin National Forest. <br><br>
+            
+            A helicopter helping fight a different Montana wildfire crashed Tuesday night but the crew was safely rescued, the Independent Record reported.
+
+            The wildfires come amid record-breaking temperatures rising well above 100 degrees in many locations this week. The National Weather Service has issued heat alerts from parts of the Southwest into the Great Basin and California.
+
+            Salt Lake City hit 107 degrees on Tuesday, tying an all-time record high for any day of the year. Temperature records were also tied or broken in Laramie, Wyoming; Billings, Montana; Tucson, Arizona; and Helena, Montana.
+
+            The heat combined with the extreme dryness is making conditions ripe for dangerous wildfires.
+
+            About 89% of the West is facing drought conditions, according to the U.S. Drought Monitor. More than half of the western U.S. is in the two highest categories of drought: extreme and exceptional.<br><br>
+
+            Much of the region is also facing an above-average potential for wildfires through at least June and July.
+
+            The NWS said people in the San Francisco Bay area were reporting smelling smoke in the air Wednesday morning. That was likely coming from fires across the Desert Southwest, the agency said.
+        </p>
+               
+    </div>
+        
+    <footer>
+            <div class="name">
+                <h3>Contact Information</h3>
+                <p> 
+                    <strong>Address:</strong> 123 Dimahanap Street, Cubao, Quezon City, Philippines 1110<br>
+                    <strong>Telephone Number:</strong> +632 8901-1234<br>
+                    <strong>Email Address:</strong> <a href="meteorological@gmail.com">meteorological@gmail.com</a> <br><br>
+                    &copy; 2021 | Romulo Calasang | Philippines | <a href="https://www.byui.edu/online"> BYUI Online Learning</a><br><br>
+                </p>
+
+                <p id="displayDate"></p>  
+                <script>
+                    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        var currentDate = new Date();
+                        var day = currentDate.getDay();        
+                        var date = currentDate.getDate();
+                        var month = currentDate.getMonth();
+                        var year = currentDate.getFullYear();
+                           
+                       document.getElementById("displayDate").textContent = `${days[day]}, ${date} ${months[month]} ${year}`; 
+                </script>
+
+                    <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="map">
+                        <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                        var setting = {"height":250,"width":500,"zoom":17,"queryString":"Temple Drive, Quezon City, Metro Manila, Philippines","place_id":"EjRUZW1wbGUgRHJpdmUsIFF1ZXpvbiBDaXR5LCBNZXRybyBNYW5pbGEsIFBoaWxpcHBpbmVzIi4qLAoUChIJmT0sgALIlzMRiNLa4Wgt8FgSFAoSCXVz70IJupczEUA9CP7ZMppK","satellite":false,"centerCoord":[14.594966404135006,121.07054589999998],"cid":"0x58f02d68e1dad288","lang":"en","cityUrl":"/philippines/manila","cityAnchorText":"Map of Manila, Luzon, Philippines","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"526522"};
+                        var d = document;
+                        var s = d.createElement('script');
+                        s.src = 'https://1map.com/js/script-for-user.js?embed_id=526522';
+                        s.async = true;
+                        s.onload = function (e) {
+                          window.OneMap.initMap(setting)
+                        };
+                        var to = d.getElementsByTagName('script')[0];
+                        to.parentNode.insertBefore(s, to);
+                      })();</script><a href="https://1map.com/map-embed">1 Map</a>
+                    </div>
+            </div>
+
+            <div class="social">
+                <a href="https://www.facebook.com/" target=" _blank">
+                <img class="round" src="images/fb.png" alt="facebook logo" title="facebook" width = "50px"></a>
+                <a href="https://twitter.com/" target=" _blank1">
+                <img class="round" src="images/twit.png" alt="twitter logo" title="twitter" width = "50px"></a>
+                <a href="https://www.instagram.com/?hl=en" target=" _blank2">
+                <img class="round" src="images/ig.png" alt="instagram logo" title="instagram" width = "50px"></a>
+                <a href="https://www.youtube.com/" target=" _blank3">
+                <img class="round" src="images/yt.png" alt="youtube logo" title="youtube" width = "50px"></a>
+            </div>
+
+    </footer>
+    
+</body>
+</html>
