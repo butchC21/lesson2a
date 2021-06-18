@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Site Plan</title>
+    <link rel="stylesheet" href="target-audience.css">
+   
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h1>The Weather Site Plan</h1>
+        </nav>
+
+        <div class="text-gallery">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </div>
+    </header>
+      
+        <h2>Audience</h2>
+        <div class="text">
+            <p>All individuals whether outdoor enthusiasts, a regular employee, students, parents, children, 
+                or a thrill-seekers. In short, anyone who wants to know the weather forecast today till the next five days. 
+                Most of our visitors can access it from their mobile device, desktop, or tablet.</p>
+        </div>
+
+        <h2>Two Personas</h2>
+        <div class="text">
+            <p><strong>Mark Valdez</strong><br><br>
+                Mark is a 21-year-old male who likes sports and outdoor activities. 
+                He wants to hike with his friends during the weekend to relax and relieve from 
+                stress on his day-to-day work. He heard on the news that there is an upcoming typhoon. 
+                So, he contacted his friends on what their plans are or if the said typhoon will really 
+                hit their place. As such he checks the Meteorological Station of the 5-day weather forecast 
+                so he and his friends will know if they are going to pursue their plan or not.<br><br>
+                
+                <strong>Cara Miguel</strong><br><br>
+                Cara is a 42-year-old outdoor enthusiast female, and she likes to enjoy her weekend fishing 
+                with her husband and kids. She loves to go to the lake nearby their house and spend 
+                the whole day fishing. Aside from that she also enjoys hunting wild animals together 
+                with her husband. Prior to their fishing she will check on her mobile phone if there 
+                will be any upcoming storm or hurricane that can hamper their plans.
+            </p>
+        </div>
+
+        <h2>Scenarios</h2>
+        <div class="text">
+            <p>I want to go to the beach with my family and friends tomorrow, and I want to check the weather condition?<br>
+                <strong>The meteorological station will show you the weather forecast for 5 days.</strong><br><br>
+
+                Can I access a map?<br>
+                <strong>Yes, you can access a map on the website which is located at the bottom.</strong><br><br>
+                
+                Is the website responsive to different portals such as desktop, tablet, or phone?<br>
+                <strong>Yes, the website can be viewed and accessed on desktop, tablet, or phone.</strong><br><br>
+                
+                Will there be news articles regarding the weather and other geological updates?<br>
+                
+                <strong>Yes, there will be news and weather article summaries on a regular basis.</strong><br><br>
+                </p>
+        </div>
+
+    <footer>
+            <div class="name">
+                
+                    &copy; 2021 | Romulo Calasang | Philippines | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
+                </p>
+
+                <p id="displayDate"></p>  
+                <script>
+                    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        var currentDate = new Date();
+                        var day = currentDate.getDay();        
+                        var date = currentDate.getDate();
+                        var month = currentDate.getMonth();
+                        var year = currentDate.getFullYear();
+                           
+                       document.getElementById("displayDate").textContent = `${days[day]}, ${date} ${months[month]} ${year}`; 
+                </script>
+            </div>
+    </footer>
+    
+</body>
+</html>

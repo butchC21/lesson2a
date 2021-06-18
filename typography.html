@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Site Plan</title>
+    <link rel="stylesheet" href="typography.css">
+   
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h1>The Weather Site Plan</h1>
+        </nav>
+
+        <div class="text-gallery">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </div>
+    </header>
+      
+        <h2>Typography</h2>
+        <div class="text">
+            <p>The fonts that I will use in this website are Helvetica and sans-serif.</p>
+        </div>
+
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Section</th>
+                    <th>Font Used</th>
+                    <th>Font Size</th>
+                    <th>Hex Code</th>
+                    <th>Output</th>
+                </tr>
+    
+                <tr>
+                    <td>Site Header</td> 
+                    <td>Helvetica</td>
+                    <td>50px</td>
+                    <td>#0BC9CD</td>
+                    <td class="site-header">Sample</td>
+                </tr>
+
+                <tr>
+                    <td>Navigation</td>
+                    <td>Sans-Serif</td>
+                    <td>40px</td>
+                    <td>#000000</td>
+                    <td class="nav">Sample</td>
+                </tr>
+
+                <tr>
+                    <td>Heading 1 (h1)</td>
+                    <td>Sans-Serif</td>
+                    <td>40px</td>
+                    <td>#EBC20B</td>
+                    <td class="h1">Sample</td>
+                </tr>
+
+                <tr>
+                    <td>Heading 2 (h2)</td>
+                    <td>Sans-Serif</td>
+                    <td>35px</td>
+                    <td>#EBC20B</td>
+                    <td class="h2">Sample</td>
+                </tr>
+
+                <tr>
+                    <td>Heading 3 (h3)</td>
+                    <td>Sans-Serif</td>
+                    <td>30px</td>
+                    <td>#000000</td>
+                    <td class="h3">Sample</td>
+                </tr>
+
+                <tr>
+                    <td>Paragraph (p)</td>
+                    <td>Helvetica</td>
+                    <td>15px</td>
+                    <td>#000000</td>
+                    <td class="paragraph">Sample</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <footer>
+            <div class="name">
+                
+                    &copy; 2021 | Romulo Calasang | Philippines | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
+                </p>
+
+                <p id="displayDate"></p>  
+                <script>
+                    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        var currentDate = new Date();
+                        var day = currentDate.getDay();        
+                        var date = currentDate.getDate();
+                        var month = currentDate.getMonth();
+                        var year = currentDate.getFullYear();
+                           
+                       document.getElementById("displayDate").textContent = `${days[day]}, ${date} ${months[month]} ${year}`; 
+                </script>
+            </div>
+    </footer>
+    
+</body>
+</html>

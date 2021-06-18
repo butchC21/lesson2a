@@ -1,0 +1,141 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+  
+  nav h1{
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .navigation{
+    background: linear-gradient(
+        180deg,
+        rgba(8, 8, 8, 0.63) 10%,
+        rgba(12, 10, 10, 0)
+      );
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  h2{
+    text-align: center;
+    
+    border-top: 5px double rgb(94, 94, 236);
+    border-bottom: 10px solid rgb(68, 68, 241);;
+    height: 50px;
+    padding-top: 10px;
+    border-radius: 15px;
+  }
+  
+  ul{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  li a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  a:hover{
+    color: crimson;
+    text-decoration: underline;
+  }
+  
+  .text{
+    border: 2px solid lightgray;
+    margin: auto;
+    align-items: center;
+    width: 800px;
+    border-radius: 20px;
+    background-color: honeydew;
+  }
+  
+  .text p{
+    font-size: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .text-gallery {
+    height: 80px;
+    width: 100%; 
+    background-color:rgb(16, 185, 185);
+  }
+
+  .colorPallete{
+    margin-left: 280px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .colors{
+      width: 800px;
+      height: 80px;
+      min-width: 350px;
+      margin: auto;
+      text-align: center;
+      align-items: center;
+      margin-bottom: 70px;
+  }
+  
+  .colors th{
+      background-color: gray;
+  }
+
+  .primary{
+    background-color: rgb(11,201,205);
+  }
+  
+  .secondary{
+    background-color: rgb(16,185,185);
+  }
+
+.accent1{
+    background-color: rgb(255,255,255);
+}
+
+.accent2{
+    background-color: rgb(0,0,0); 
+    color: #fff;   
+}
+
+.accent3{
+    background-color: rgb(235,194,11);
+}
+
+.accent4{
+    background-color: rgb(238,10,10);
+}
+ 
+footer{
+    background: linear-gradient(
+      180deg,
+      rgba(8, 8, 8, 0.63) 10%,
+      rgba(12, 10, 10, 0)
+    );
+      height: 100px;
+      padding-top: 15px;
+  }
+  footer p{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 5px;
+  }
+  
+  #displayDate{
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  .name{
+    margin: 15px  10px 20px 20px;
+  }

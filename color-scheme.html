@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Site Plan</title>
+    <link rel="stylesheet" href="color-scheme.css">
+   
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <h1>The Weather Site Plan</h1>
+        </nav>
+
+        <div class="text-gallery">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="target-audience.html">Target Audience</a></li>
+                <li><a href="color-scheme.html">Color Scheme</a></li>
+                <li><a href="typography.html">Typography</a></li>
+            </ul>
+        </div>
+    </header>
+      
+        <h2>Color Pallete</h2>
+        <div class="text">
+            <p>For Meteorological Station website, I will use the following color palette below. 
+                Each color symbolizes a temperature or weather. They are bright and radiant 
+                colors to catch my audience’s attention. I will use black and other colors if 
+                needed in the fonts. <br><br>
+
+                Pallete's link: <a href="https://coolors.co/0bc9cd-10b9b9-ffffff-000000-ebc20b-ee0a0a">https://coolors.co/0bc9cd-10b9b9-ffffff-000000-ebc20b-ee0a0a</a>
+                </p>
+        </div>
+
+        <img class="colorPallete" src="images/colorPallete.PNG" alt="color pallete" width="800px">
+
+        <table class="colors">
+            <tbody>
+                <tr>
+                    <th>Header & Footer</th>
+                    <th>Website Background</th>
+                    <th>Nav Bar</th>
+                    <th>Font 1</th>
+                    <th>Font 2</th>
+                    <th>Any Transitions</th>
+                </tr>
+    
+                <tr>
+                    <td class="primary">[#0BC9CD]</td>
+                    <td class="secondary">[#10B9B9]</td>
+                    <td class="accent1">[#FFFFFF]</td>
+                    <td class="accent2">[#000000]</td>
+                    <td class="accent3">[#EBC20B]</td>
+                    <td class="accent4">[EE0A0A]</td>
+                </tr>
+            </tbody>
+        </table>
+
+    <footer>
+            <div class="name">
+                
+                    &copy; 2021 | Romulo Calasang | Philippines | <a href="https://www.byui.edu/online"> BYUI Online Learning</a>
+                </p>
+
+                <p id="displayDate"></p>  
+                <script>
+                    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                        var currentDate = new Date();
+                        var day = currentDate.getDay();        
+                        var date = currentDate.getDate();
+                        var month = currentDate.getMonth();
+                        var year = currentDate.getFullYear();
+                           
+                       document.getElementById("displayDate").textContent = `${days[day]}, ${date} ${months[month]} ${year}`; 
+                </script>
+            </div>
+    </footer>
+    
+</body>
+</html>
